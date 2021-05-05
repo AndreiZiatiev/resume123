@@ -5,6 +5,9 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-offline`,
+    `gatsby-plugin-fontawesome-css`,
+    'gatsby-plugin-styled-components',
+    `gatsby-plugin-transition-link/AniLink`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -12,6 +15,7 @@ module.exports = {
         path: `${__dirname}/src/images/`,
       },
     },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {

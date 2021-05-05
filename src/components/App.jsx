@@ -28,6 +28,7 @@ function App() {
     <PortfolioProvider value={{ hero, about, projects, contact, footer }}>
       <Hero />
       <About />
+
       <Projects />
       <Contact />
       <Footer />
