@@ -7,7 +7,7 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-fontawesome-css`,
     'gatsby-plugin-styled-components',
-    `gatsby-plugin-transition-link`,
+    `gatsby-plugin-transition-link/AniLink`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
