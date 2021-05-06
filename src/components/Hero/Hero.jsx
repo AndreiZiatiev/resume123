@@ -26,7 +26,7 @@ const Header = () => {
   return (
     <section id="hero" className="jumbotron">
       <AniLink class="resumetop" swipe top="entry" to="/resume/" entryOffset={80}>
-        Resume42355
+        Resume66666
       </AniLink>
 
       <Container>

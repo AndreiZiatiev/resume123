@@ -1,3 +1,9 @@
+const config = require('./src/data/config');
+
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
@@ -17,10 +23,10 @@ module.exports = {
     },
 
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
-        // The property ID; the tracking code won't be generated without it
-        trackingId: 'G-B0W4VT21RF',
+        trackingId: config.googleAnalyticsID,
+        head: true,
       },
     },
 
