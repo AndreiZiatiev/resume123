@@ -43,7 +43,7 @@ const AboutPage = () => {
           Download resume{' '}
         </ResumeButton>
         <AniLink swipe top="entry" to="/" entryOffset={80}>
-          Go to Homepage
+          Go to Homepage123
         </AniLink>
       </div>
     </div>
