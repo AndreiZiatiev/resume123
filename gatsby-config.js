@@ -42,6 +42,14 @@ module.exports = {
     },
 
     {
+      resolve: `gatsby-plugin-page-creator`,
+      options: {
+        path: `${__dirname}/src/pages`,
+        ignore: [`**/style.js`, `**/style.tsx`],
+      },
+    },
+
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,
