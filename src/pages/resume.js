@@ -1,52 +1,85 @@
 import './resume.css';
 import React from 'react';
-import AniLink from 'gatsby-plugin-transition-link/AniLink';
+import AniLink from 'gatsby-plugin-transition-link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import Resumeimage from '../images/profile1.jpeg';
 import { ResumeButton } from '../components/buttons';
+import {
+  SectionIntro,
+  ContainerLayout,
+  AboutSection,
+  Title,
+  Text,
+  SubTitle,
+  FontLink,
+} from './style';
 
 const AboutPage = () => {
   return (
-    <div id="about1">
-      <div className="content">
-        <div className="about-wrapper__image">
-          <img className="resumeimage" src={Resumeimage} alt="A dog smiling in a party hat" />
-        </div>
-        <div className="txt">
-          <h2>My Name is John Doe, and I am a Designer</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras diam risus, d ignissim
-            pharetra sagittis sed, adipiscing nec felis. Maecenas non nulla eget ligula semper
-            aliquet. Pellentesque adipiscing pulvinar tortor, a adipiscing felis commodo in.
-            Vestibulum dui magna, mattis in bibendum a, congue vitae lectus. In eu odio tortor, vel
-            congue lacus. Donec viverra viverra eros, in egestas ligula adipiscing non. Morbi et
-            ultricies sapien. Duis metus odio, commodo in tempor quis, euismod et ligula. Vivamus
-            tristique condimentum ipsum sit amet posuere.
-          </p>
-          <p>
-            - adipiscing non. Morbi et ultricies sapien. Duis metus odio, commodo in tempor quis,
-          </p>
-          <p>
-            - adipiscing non. Morbi et ultricies sapien. Duis metus odio, commodo in tempor quis,
-          </p>
-          <p>
-            - adipiscing non. Morbi et ultricies sapien. Duis metus odio, commodo in tempor quis,
-          </p>
-          <p>
-            - adipiscing non. Morbi et ultricies sapien. Duis metus odio, commodo in tempor quis,
-          </p>
-        </div>
+    <>
+      <div>
+        <FontLink>
+          <a
+            href="https://github.com/smakosh/gatsby-portfolio-dev/blob/master/gatsby-config.js"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faFacebook} />
+            <span>Facebook</span>
+          </a>
+          <a
+            href="https://github.com/smakosh/gatsby-portfolio-dev/blob/master/gatsby-config.js"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faLinkedin} />
+            <span>Linkedin</span>
+          </a>
+          <a
+            href="https://github.com/smakosh/gatsby-portfolio-dev/blob/master/gatsby-config.js"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faGithub} />
+            <span>Github</span>
+          </a>
+        </FontLink>
       </div>
+      <SectionIntro>
+        <ContainerLayout>
+          <AboutSection>
+            <div>
+              <img className="resumeimage" src={Resumeimage} alt="A dog smiling in a party hat" />
+              <SubTitle> Beginner(Trainee) Front End Developer</SubTitle>
+            </div>
+            <div>
+              <Title> Hello, I’m Andrei </Title>
+              <Text>
+                {' '}
+                I'm a beginner Front End Developer hailing from Ukraine{' '}
+                <b className="text-primary lined-link" /> and living in Kyjiv.{' '}
+              </Text>
+              <Text>
+                {' '}
+                I give preference to mastering modern development tools and technologies in
+                Web-Development. You can read my resume in more detail by clicking on the link
+                below.
+              </Text>
 
-      <div className="buttons">
-        <ResumeButton href="../../resume.pdf" target="_blank">
-          {' '}
-          Download resume{' '}
-        </ResumeButton>
-        <AniLink swipe top="entry" to="/" entryOffset={80}>
-          Go to Homepage123
-        </AniLink>
-      </div>
-    </div>
+              <ResumeButton href="../../resume.pdf" target="_blank">
+                {' '}
+                Download resume{' '}
+              </ResumeButton>
+            </div>
+          </AboutSection>
+
+          <AniLink class="anilink" swipe top="entry" to="/" entryOffset={80}>
+            Go to Homepage
+          </AniLink>
+        </ContainerLayout>
+      </SectionIntro>
+    </>
   );
 };
 export default AboutPage;

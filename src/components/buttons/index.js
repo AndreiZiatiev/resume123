@@ -11,7 +11,11 @@ export const ResumeButton = styled.a`
   text-align: center;
   text-transform: uppercase;
   border-radius: 0.5rem;
-  transition: color 300ms ease-in-out, border-color 400ms ease-in-out;
-  width: 35%;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+
+  &:hover {
+    transform: translateX(6px);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+  }
 `;
 export default ResumeButton;

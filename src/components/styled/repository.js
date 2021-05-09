@@ -55,13 +55,13 @@ export const RepoHead = styled.div`
   justify-content: space-between;
 `;
 export const Text = styled.p`
-  color: rgb(25 27 29);
+  color: black;
   margin-bottom: 1rem;
   margin-top: 0.25rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-transform: capitalize;
   @media (max-width: ${variables.breakpointPhone}) {
-    font-size: 0.9rem;
+    font-size: 1.6rem;
   }
 `;
 export const FooterItem = styled.span`
@@ -79,8 +79,8 @@ export const FooterItem = styled.span`
     width: 16px;
     height: 16px;
     &.star {
-      fill: #fbc02d;
-      stroke: #ffc107;
+      fill: #f9f9f9;
+      stroke: #fbc02d;
     }
   }
   @media (max-width: ${variables.breakpointPhone}) {
