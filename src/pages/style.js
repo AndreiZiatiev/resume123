@@ -10,7 +10,7 @@ export const ContainerLayout = styled.div`
     margin: auto;
   }
   @media only screen and (min-width: ${variables.breakpointLarge}) {
-    max-width: 75rem;
+    max-width: 90rem;
   }
 `;
 
@@ -63,18 +63,36 @@ export const SubTitle = styled.h2`
 
 export const FontLink = styled.div`
 
-display:flex;
+width: ${variables.width};
+position:relative;
+display: flex;
 flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  &.wrapper {
+    max-width: ${variables.wrapperWidth};
+    margin: auto;
+  }
+  @media only screen and (min-width: ${variables.breakpointLarge}) {
+    max-width: 90rem;
+  }
 
-
+a.anilink{
+  font-size:14px;
+  position:absolute;
+  bottom:0;
+  right: 0;
+  text-transform: uppercase;
+    word-spacing: 2px;
+}
 a span{
   display:block;
   vertical-align: middle;
   font-size:14px;
 }
 a {
-  font-size: 40px;
-  padding: 10px;
+  font-size: 55px;
+  padding: 20px;
   font-family: 'GT-Walsheim-Pro-Medium';
   transition: all 200ms ease-in-out;
 
@@ -83,6 +101,7 @@ a {
 
   &:hover {
     box-shadow: 0px 0px 36px 25px rgb(0 0 0 / 3%);
+    border-radius:20%;
 
     &::after {
       z-index: 1;
@@ -101,10 +120,11 @@ a {
     }
 }
 > svg {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
+  margin:10px;
   path{
-    fill: #fbc02d;
+    fill: rgb(56 21 80);
     stroke: green;
   }
 

@@ -44,6 +44,10 @@ const AboutPage = () => {
             <FontAwesomeIcon icon={faGithub} />
             <span>Github</span>
           </a>
+
+          <AniLink class="anilink" swipe top="entry" to="/" entryOffset={80}>
+            Go to Homepage
+          </AniLink>
         </FontLink>
       </div>
       <SectionIntro>
@@ -56,15 +60,15 @@ const AboutPage = () => {
             <div>
               <Title> Hello, I’m Andrei </Title>
               <Text>
-                {' '}
                 I'm a beginner Front End Developer hailing from Ukraine{' '}
                 <b className="text-primary lined-link" /> and living in Kyjiv.{' '}
               </Text>
               <Text>
-                {' '}
                 I give preference to mastering modern development tools and technologies in
                 Web-Development. You can read my resume in more detail by clicking on the link
-                below.
+                below. This site has been developed with frontend framework Gatsby.js which provides
+                an opportunity for creating rich, optimized websites and a cloud platform for
+                delivering them on a blazing fast edge network.
               </Text>
 
               <ResumeButton href="../../resume.pdf" target="_blank">
@@ -73,10 +77,6 @@ const AboutPage = () => {
               </ResumeButton>
             </div>
           </AboutSection>
-
-          <AniLink class="anilink" swipe top="entry" to="/" entryOffset={80}>
-            Go to Homepage
-          </AniLink>
         </ContainerLayout>
       </SectionIntro>
     </>

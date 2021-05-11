@@ -1,44 +1,16 @@
-.anilink {
+a .anilink {
   display: inline-block;
-  padding: 0.75rem 1.25rem;
-  border-radius: 10rem;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 1rem;
-  letter-spacing: 0.15rem;
-  transition: all 0.3s;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-.anilink:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: blue;
-  border-radius: 10rem;
-  z-index: -2;
-}
-.anilink:before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  height: 100%;
-  background-color: green;
-  transition: all 0.3s;
-  border-radius: 10rem;
-  z-index: -1;
-}
-.anilink:hover {
-  color: #fff;
-}
-.anilink:before {
-  width: 100%;
+   padding: 0.5em 3em;
+   border: 0.16em solid #ffffff;
+   margin: 0 0.3em 0.3em 0;
+   box-sizing: border-box;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 400;
+   color: #ffffff;
+   text-align: center;
+   transition: all 0.15s;
 }
 
 body {
@@ -48,20 +20,17 @@ body {
 }
 h1 {
   font: 400 58px/60px 'Bree Serif', Georgia, serif;
-  color: #6a6969;
+  color: #615c5c;
 }
 h2 {
   font: 400 18px/22px 'Bree Serif', Georgia, serif;
-  color: #6a6969;
+  color: #eee8e8;
 }
 h3 {
   font: 400 14px/16px 'Bree Serif', Georgia, serif;
-  color: #6a6969;
+  color: #eee8e8;
 }
-ul {
-  margin: 0px;
-  padding: 0px;
-}
+
 a {
   text-decoration: none;
   color: #6a6969;
@@ -82,35 +51,6 @@ a img {
 }
 
 /****************************************************/
-/* HEADER */
-/****************************************************/
-
-#header {
-  width: 864px;
-  height: 115px;
-  background-color: #222222;
-  padding: 0px 43px;
-  position: fixed;
-  top: 0px;
-  left: 50%;
-  margin: 0 0 0 -475px;
-}
-#header #logo {
-  padding-top: 40px;
-  float: left;
-}
-#header #main-menu {
-  float: right;
-  padding-top: 45px;
-}
-#header #main-menu li {
-  float: left;
-  list-style: none;
-  margin-left: 27px;
-  font: 400 16px/20px 'Bree Serif', Georgia, serif;
-}
-
-/****************************************************/
 /* ABOUT SECTION */
 /****************************************************/
 
@@ -121,9 +61,12 @@ a img {
   float: left;
   list-style: none;
   margin-left: 27px;
-  font: 26px/28px 'Bree Serif', Georgia, serif;
+  font: 50px 'Bree Serif', Georgia, serif;
   text-decoration: none;
   color: #6a6969;
+}
+.resumetop:hover {
+  color: teal;
 }
 .myShareCountWrapper {
   width: 30px;
@@ -134,8 +77,8 @@ span.react-share__ShareCount {
   height: 30px;
 }
 .resumeimage {
-  height: 300px;
-  width: 300px;
+  height: 70%;
+  width: 100%;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;

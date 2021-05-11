@@ -38,7 +38,7 @@ const About = () => {
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
               <div className="about-wrapper__info">
                 <p className="about-wrapper__info-text">
-                  A short preparatory speech on my resume
+                  Below is the link to download my Resume in PDF Format
                   {resume && (
                     <span className="d-flex mt-3">
                       <a
@@ -47,7 +47,7 @@ const About = () => {
                         className="cta-btn cta-btn--resume"
                         href={resume}
                       >
-                        Resume21312768679967
+                        RESUME
                       </a>
                     </span>
                   )}
